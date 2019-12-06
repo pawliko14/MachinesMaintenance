@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 import org.junit.Before;
 
@@ -64,7 +65,10 @@ public class MachineDAOTest {
 
 	@Test
 	public	void testList() {
-		fail("Not yet implemented");
+		List<Machine> MachineList = dao.list();
+		
+		System.out.println("list of machines is not empty, test succedded");
+		assertTrue(!MachineList.isEmpty());
 	}
 
 }
