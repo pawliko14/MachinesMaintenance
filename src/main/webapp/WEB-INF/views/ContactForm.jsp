@@ -15,20 +15,24 @@
 		<table>
 			<form:hidden path="id"/>
 			<tr>
-				<td>Name:</td>
-				<td><form:input path="name" /></td>
+				<td>Nr_Maszyny:</td>
+				<td><form:input path="Nr_Maszyny" /></td>
 			</tr>
 			<tr>
-				<td>Email:</td>
-				<td><form:input path="email" /></td>
+				<td>Kod:</td>
+				<td><form:input path="Kod" /></td>
 			</tr>
 			<tr>
-				<td>Address:</td>
-				<td><form:input path="address" /></td>
+				<td>Wydzial:</td>
+				<td><form:input path="Wydzial" /></td>
 			</tr>
 			<tr>
-				<td>Telephone:</td>
-				<td><form:input path="telephone" /></td>
+				<td>Gniazdo:</td>
+				<td><form:input path="Gniazdo" /></td>
+			</tr>
+			<tr>
+				<td>Sprawnosc:</td>
+				<td><form:input path="Sprawnosc" /></td>
 			</tr>
 			<tr>
 				<td colspan="2" align="center"><input type="submit" value="Save"></td>

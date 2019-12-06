@@ -13,28 +13,30 @@
 	        <h1>Contact List</h1>
 	        <h3><a href="newContact">New Contact</a></h3>
 	        <table border="1">
-	        	<th>No</th>
-	        	<th>Name</th>
-	        	<th>Email</th>
-	        	<th>Address</th>
-	        	<th>Telephone</th>
-	        	<th>Action</th>
+	        	<th>ID</th>
+	        	<th>Nr_Maszyny</th>
+	        	<th>Kod</th>
+	        	<th>Wydzial</th>
+	        	<th>Gniazdo</th>
+	        	<th>Sprawnosc</th>
 	        	
-				<c:forEach var="contact" items="${listContact}" varStatus="status">
-	        	<tr>
-	        		<td>${status.index + 1}</td>
-					<td>${contact.name}</td>
-					<td>${contact.email}</td>
-					<td>${contact.address}</td>
-					<td>${contact.telephone}</td>
-					<td>
-						<a href="editContact?id=${contact.id}">Edit</a>
-						&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="deleteContact?id=${contact.id}">Delete</a>
-					</td>
-							
-	        	</tr>
-				</c:forEach>	        	
+	 <c:forEach items="${listCustomer}" var="customer">
+        <tr>
+            <td>${Machine.ID}</td>
+            <td>${Machine.Nr_Maszyny}</td>
+            <td>${Machine.Kod}</td>
+            <td>${Machine.Wydzial}</td>
+            <td>${Machine.Gniazdo}</td>
+            <td>${Machine.Sprawnosc}</td>
+            
+            <td>
+                <a href="/edit?id=${Machine.ID}">Edit</a>
+                <a href="/delete?id=${Machine.ID}">Delete</a>
+            </td>
+        </tr>
+        </c:forEach>	
+			        	
+			        	
 			</table>
     	</div>
     </body>
